@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* common css */
+.text-sm {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.text-lg {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.input-m-b {
+  margin-bottom: 12px;
+}
+
+.bg-green {
+  background: rgb(0 231 1);
+}
+
+.round-4 {
+  border-radius: 4px;
+}
+
+.round-left {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.round-right {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.full-container {
+  display: flex;
+}
+
+.bg-primary {
+  background: rgb(15 33 46);
+}
+
+.bg-light {
+  background: #2f4553;
+}
+
+.form-text {
+  color: rgb(177 186 211);
+}
+
+img, svg {
+  /* display: block; */
+  vertical-align: middle;
+}
+
+/* end */
+
+.label-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 4px;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+}
+
+.submit-btn {
+  color: rgb(1 62 1);
+  border: none;
+  height: 56px;
+  padding: 10px;
+}
+
+.submit-btn:hover {
+  background: rgb(31 255 32);
+}
+
+.submit-btn:active {
+  font-size: 12px;
+  line-height: 16px;
+  
+}
+
+.shadow-input, .shadow-tile {
+  box-shadow: 0 0 #0000,0 0 #0000, 0 1px 3px 0 rgba(0,0,0,.2),0 1px 2px 0 rgba(0,0,0,.12);
+}
+
+.bet-input-group {
+  display: flex;
+}
+
+.half, .double {
+  border: none;
+  position: relative;
+}
+
+.bet-input-box {
+  width: 100%;
+  position: relative;
+}
+
+.double::after {
+  width: 0.125rem;
+  bottom: 25%;
+  top: 25%;
+  left: -1px;
+  position: absolute;
+  background-color: rgb(15 33 46);
+  content: " ";
+}
+
+.dollor-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-right: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.dollor-icon > img {
+  width: 16px;
+  height: 16px;
+}
+
+#betAmount {
+  padding-right: 32px;
+}

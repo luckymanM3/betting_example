@@ -1,6 +1,12 @@
 export const TOTAL_ITEM = 25;
-export type ItemType = {
-  idx?: number,
+export interface ItemType {
+  idx: number,
   isGem: boolean,
-  isOpen: boolean,
+  status: STATUS
+}
+
+export enum STATUS {
+  DEFAULT = 'DEFAULT',
+  CLICKED = 'CLICKED',
+  NON_CLICKED = 'NON_CLICKED'
 }

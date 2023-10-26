@@ -195,10 +195,6 @@ button, input, optgroup, select, textarea {
   opacity: 0.5;
 }
 
-.disabled:hover {
-  background: rgb(0 231 1);
-}
-
 .disabled:active {
   font-size: 14px !important;
   line-height: 20px !important;
@@ -229,4 +225,16 @@ button, input, optgroup, select, textarea {
   display: grid;
   grid-template-columns: repeat(5,minmax(0,1fr));
   gap: 8px;
+}
+
+.score-box {
+  z-index: 100;
+}
+
+.opened-animation {
+  
+}
+
+.opened {
+  background: rgb(18, 31, 39);
 }

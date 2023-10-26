@@ -15,4 +15,7 @@ export const SelectComponent = styled.select<SelectComponentProps>`
   transition-duration: .2s;
   outline-offset: 2px;
   background: ${props => props.background ? props.background : '100%'};
+  &:focus, &:hover {
+    border-color: rgb(85 112 134)
+  }
 `;

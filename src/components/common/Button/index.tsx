@@ -11,4 +11,10 @@ export const ButtonComponent = styled.button<ButtonComponentProps>`
   ${props => props.height ? 'height: '+ props.height : ''};
   outline: none;
   transition-duration: .2s;
+  border: none;
+  padding: 10px;
+  &:active {
+    font-size: 12px;
+    line-height: 16px;
+  }
 `;

@@ -13,4 +13,7 @@ export const InputComponent = styled.input<InputComponentProps>`
   outline: 2px solid transparent;
   transition-duration: .2s;
   outline-offset: 2px;
+  &:focus, &:hover {
+    border-color: rgb(85 112 134)
+  }
 `;

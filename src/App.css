@@ -53,7 +53,7 @@
   font-weight: 500;
 }
 
-.input-m-b {
+.mb-12 {
   margin-bottom: 12px;
 }
 
@@ -96,6 +96,16 @@ img, svg {
   vertical-align: middle;
 }
 
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+}
+
+.color-white {
+  color: white;
+}
+
 /* end */
 
 .label-group {
@@ -111,9 +121,6 @@ button, input, optgroup, select, textarea {
 
 .submit-btn {
   color: rgb(1 62 1);
-  border: none;
-  height: 56px;
-  padding: 10px;
 }
 
 .submit-btn:hover {
@@ -139,12 +146,12 @@ button, input, optgroup, select, textarea {
   position: relative;
 }
 
-.bet-input-box {
+.input-box {
   width: 100%;
   position: relative;
 }
 
-.double::after {
+.double::before {
   width: 0.125rem;
   bottom: 25%;
   top: 25%;
@@ -154,7 +161,7 @@ button, input, optgroup, select, textarea {
   content: " ";
 }
 
-.dollor-icon {
+.input-icon, .input-sm-icon {
   position: absolute;
   right: 0;
   top: 0;
@@ -164,11 +171,70 @@ button, input, optgroup, select, textarea {
   align-items: center;
 }
 
-.dollor-icon > img {
+.input-icon > img {
   width: 16px;
   height: 16px;
 }
 
+.input-sm-icon > img {
+  width: 20px;
+  height: 20px;
+}
+
 #betAmount {
   padding-right: 32px;
+}
+
+.double:hover, .half:hover, .random-pick:hover {
+  background: rgb(61 85 100);
+  color: white;
+}
+
+.disabled, .disabled-input {
+  cursor: no-drop;
+  opacity: 0.5;
+}
+
+.disabled:active {
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+.bet-input-group .disabled {
+  background: rgb(47 69 83);
+  color: rgb(177 186 211);
+  opacity: 1;
+}
+.bet-input-group .disabled:hover {
+  background: rgb(47 69 83);
+}
+
+.disabled-input {
+  opacity: 1;
+}
+
+.grid {
+  display: grid;
+}
+
+.game-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(5,minmax(0,1fr));
+  gap: 8px;
+}
+
+.score-box {
+  z-index: 100;
+}
+
+.opened-animation {
+  
+}
+
+.opened {
+  background: rgb(18, 31, 39);
 }
